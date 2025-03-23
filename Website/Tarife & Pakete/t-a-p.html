@@ -1,0 +1,126 @@
+    <!DOCTYPE html>
+    <html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="theme-color" content="#000000">
+        <title>ERZProvide - Hausservice DE</title>
+        <link rel="stylesheet" href="t-a-p.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="/Logo/Logo neu.png">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"/>
+
+
+    </head>
+    <body>
+        <div class="top-bar">
+            <h1>ERZProvide - Hausservice</h1>
+            <a href="/Startseite/index.html">
+                <img src="/Logo/logo neu.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="info-bar">
+            <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+            <span class="separator">|</span>
+            <a href="/Kontakt/contact.html">Kontakt</a>
+            <span class="separator">|</span>
+            <a href="/Über uns/aboutUs.html">Über uns</a>
+            <span class="separator">|</span>
+            <a href="/Impressum/imprint.html">Impressum</a>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="/Startseite/index.html">Start</a>
+            <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+            <a href="/Kontakt/contact.html">Kontakt</a>
+            <a href="/Über uns/aboutUs.html">Über uns</a>
+            <a href="/Impressum/imprint.html">Impressum</a>
+        </div>
+
+        <div class="container">
+
+            <div class="box" id="box1">
+                <h1 id="title1">Garten-/Beetpflege</h1>
+                <span class="material-symbols-outlined" id="icon1">
+                    deceased
+                </span>
+                <button class="toggleButton" data-id="1">mehr erfahren</button>
+                
+                <div id="text-1" class="hidden">
+                    <h3>Grundlage für einen gesunden und schönen Garten</h3>
+                    <p id="text-p">Die Pflege von Garten und Beeten ist essenziell, um Pflanzen gesund zu halten, das Wachstum zu fördern und ein ansprechendes Gesamtbild zu schaffen. Dabei spielen verschiedene Aufgaben je nach Jahreszeit, Pflanzentyp und individuellen Anforderungen eine Rolle.</p>
+                    
+                    <div class="anstriche">
+                        <p class="circle">Bodenpflege & Vorbereitung</p>
+                        <p class="circle" id="pfla">Pflanzung & Pflege von Beeten</p>
+                        <p class="circle">Rasenpflege als Teil der Gartenpflege</p>
+                        <p class="circle">Saisonale Gartenpflege</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box" id="box2">
+                <h1 id="title2">Streu- & Schneeräumarebeiten</h1>
+                <span class="material-symbols-outlined" id="icon2">
+                    ac_unit
+                </span>
+                <button class="toggleButton" data-id="2">mehr erfahren</button>
+            
+                <div id="text-2" class="hidden">
+                    <h3>Vorraussetzung für sichere Wege und Flächen im Winter</h3>
+                    <p id="text-p">Streu- und Schneeräumarbeiten sind essenzielle Maßnahmen zur Gewährleistung der Verkehrssicherheit in der Winterzeit. Sie umfassen verschiedene Tätigkeiten, die das Entfernen von Schnee sowie das Verhindern oder Bekämpfen von Eisglätte auf Straßen, Gehwegen und anderen Verkehrsflächen betreffen.</p>
+                    <div class="anstriche" id="anstriche-2">
+                        <p class="circle">Schneefräsen</p>
+                        <p class="circle">Manuelle Räumung</p>
+                        <p class="circle">Streuen von Salz (Auftaumittel)</p>
+                        <p class="circle">Einsatz von Split und Sand</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box" id="box3">
+                <h1 id="title3">Räumliche Entrümpelung und Entsorgung</h1>
+                <span class="material-symbols-outlined" id="icon3">
+                    cottage
+                </span>
+                <button class="toggleButton" data-id="3">mehr erfahren</button>
+            
+                <div id="text-3" class="hidden">
+                    <h3>Effiziente Befreiung von Unrat und Altlasten</h3>
+                    <p id="text-p">Räumliche Entrümpelung und Entsorgung umfasst das Ausräumen, Sortieren sowie fachgerechte Entsorgen oder Weiterverwerten ungenutzter Gegenstände.</p>
+                </div>
+            </div>
+            
+            <div class="box" id="box4">
+                <h1 id="title4">Hecken- & Strauchschnitt</h1>
+                <span class="material-symbols-outlined" id="icon4">
+                    nature
+                </span>
+                <button class="toggleButton" data-id="4">mehr erfahren</button>
+            
+                <div id="text-4" class="hidden">
+                    <h3>Pflege für gesunde Pflanzen und gepflegte Gärten</h3>
+                    <p id="text-p">Der Hecken- und Strauchschnitt ist eine essenzielle Maßnahme zur Pflege und Formgebung von Gehölzen. Durch gezieltes Schneiden bleiben Hecken dicht und vital, während Sträucher gesund wachsen und blühen.</p>
+                </div>
+            </div>
+            <div class="box" id="box5">
+                <h1 id="title5">Säuberungsarbeiten im Außenbereich</h1>
+                <span class="material-symbols-outlined" id="icon5">
+                    construction
+                </span>
+                <button class="toggleButton" data-id="5">mehr erfahren</button>
+            
+                <div id="text-5" class="hidden">
+                    <h3>Für gepflegte und sichere Außenanlagen</h3>
+                    <p id="text-p">Die räumliche Entrümpelung und Entsorgung umfasst das Entfernen und fachgerechte Entsorgen von nicht mehr benötigten Gegenständen, Möbeln, Elektrogeräten oder Bauschutt aus privaten, gewerblichen oder öffentlichen Räumen. Diese Arbeiten sind essenziell, um Platz zu schaffen, Ordnung herzustellen und gesetzliche Entsorgungsrichtlinien einzuhalten.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="t-a-p.js"></script>
+        <script src="https://kit.fontawesome.com/859ca09fc5.js" crossorigin="anonymous"></script>
+    </body>
+    </html>

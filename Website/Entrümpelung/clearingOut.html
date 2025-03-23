@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>ERZProvide - Hausservice DE</title>
+    <link rel="stylesheet" href="clearingOut.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/Logo/Logo neu.png">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>ERZProvide - Hausservice</h1>
+        <a href="/Startseite/index.html">
+            <img src="/Logo/logo neu.png" alt="Logo">
+        </a>
+
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="/Startseite/index.html">Start</a>
+            <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+            <a href="/Kontakt/contact.html">Kontakt</a>
+            <a href="/Über uns/aboutUs.html">Über uns</a>
+            <a href="/Impressum/imprint.html">Impressum</a>
+        </div>
+    </div>
+
+    <div class="info-bar">
+        <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+        <span class="separator">|</span>
+        <a href="/Kontakt/contact.html">Kontakt</a>
+        <span class="separator">|</span>
+        <a href="/Über uns/aboutUs.html">Über uns</a>
+        <span class="separator">|</span>
+        <a href="/Impressum/imprint.html">Impressum</a>
+    </div>
+    
+    <div class="text-clearingOut">
+        <div style="width: 100%;">
+            <h1>Entrümpelungen & Entsorgung</h1>
+        </div>
+        <div style="display: flex; gap: 10%;">
+        <div style="width: 50%;">
+            <h2>Entrümpelungen</h2>
+            <p><span class="circle"></span>Wohnungen & Häuser</p>
+            <p class="test"><span class="circle"></span>Keller & Dachböden</p>
+            <p class="test"><span class="circle"></span>Garagen & Schuppen</p>
+            <p class="test"><span class="circle"></span>Büro- & Lagerentrümpelungen</p>
+
+            <p class="test" id="nachlassauflösung"><span class="circle"></span>Nachlassauflösung & <br id="weiter-nuner"><p id="weiter-rechts">Wohnungsräumungen</p></p>
+            <button onclick="NachlassUndWohnungFunc()" class="NachlassUndWohnung-button">mehr erfahren</button>
+            <div class="NachlassUndWohnung-description" style="display: none;">
+                <h3>Mehr zu Nachlassauflösung & <br>Wohnungsräumungen</h3>
+                <hr>
+                <p>Bei der Nachlassauflösung und Wohnungsräumung übernehmen wir die komplette Entrümpeung von Wohnungen und Häusern. Wir sortieren und dokumentieren Gegenstände, entsorgen unbrauchbare Materialien fachgerecht un handeln dabei stets diskret und einfühlsam. <br><br>Wir führen keine Beratung auf fachliche Ebene durch.</p>
+            </div>
+
+            <p class="test" id="weiter-nauf"><span class="circle"></span>Ladenflächen räumen</p>
+
+        <div class="text-disposals">    
+            <h2>Entsorgung</h2>
+            <p class="test"><span class="circle"></span>Sperrmüllabholung & Transport</p>
+            <button onclick="bulkyWasteAndTransportFunc()" class="bulkyWasteAndTransport-button">mehr erfahren</button>        
+            <div class="bulkyWasteAndTransport-description" style="display: none;">
+                <h3>Mehr zu Sperrmüll- <br>abholung & Transport</h3>
+                <hr>
+                <p>Unser Service umfasst das Verladen, den sicheren Transport und die umweltgerechte Entsorgung von Sperrmüll an den zulässigen Sammelstellen. Kein Transport gilt für Gefahr- oder Auflagepflichtigen Stoffe wie Farben, Lacke, Batterien, Chemikalien oder Asbest.</p>
+            </div>
+
+            <p class="test"><span class="circle"></span>Bau- & Renovierungsabfälle</p>
+            <button onclick="bauUndRenovierungsabfaelleFunc()" class="bauUndRenovierungsabfaelle-button">mehr erfahren</button>
+            <div class="bauUndRenovierungsabfaelle-description" style="display: none;">
+                <h3>Mehr zu Bau- & Renovierungsabfälle</h3>
+                <hr>
+                <p>Bei der Beseitigung von Bau- & Renovierungsabfällen sorgen wir für einen fachgerechtet und Umweltbewussten Ablauf. So gewährleisten wir, dass Bau- & Renovierungsabfälle nachhaltig und vorschriftsgemäß entsorgt werden. <br><br>Keine Entsorgung gilt für Gefahr- oder Auflagepflichtigen Stoffen und Materialien.</p>
+            </div>
+
+            <p class="test"><span class="circle"></span>Bodenbeläge aller Art</p>
+            <button onclick="bodenbelaegeFunc()" class="bodenbelaege-button">mehr erfahren</button>
+            <div class="bodenbelaege-description" style="display: none;">
+                <h3>Mehr zu Bodenbeläge aller Art</h3>
+                <hr>
+                <p>Die Entfernung von Teppichen und Bodenbelägen erfolgt in mehreren sorgfältig geplanten Schritten. <br><br>Wir sichern den Arbeitsbereich, entfernen den alten Teppich oder Bodenbelag samt Kleberesten und entsorgen das Material umweltgerecht.</p>
+            </div>
+
+            <p class="test"><span class="circle"></span>Elektrokleinstgeräte</p>
+            <button onclick="elektrokleinstgeraeteFunc()" class="elektrokleinstgeraete-button">mehr erfahren</button>
+            <div class="elektrokleinstgeraete-description" style="display: none;">
+                <h3>Mehr zu Elektrokleinstgeräte</h3>
+                <hr>
+                <p>Wir übernehmen die fachgerechte Entsorgung von kleinen Elektrogeräten sowie Industrieanlagen. Dabei gehen wir wie folgt vor. Annahme und Prüfung, Demontage und Trennung und Recycling und Umweltgerechte Verwertung. Auf Wunsch stellen wir Entsorgungsnachweise aus.</p>
+            </div>
+        </div>    
+        </div>
+        </div>
+    </div>
+
+    <script src="clearingOut.js"></script>
+</body>
+</html>

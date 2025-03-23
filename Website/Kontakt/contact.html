@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERZProvide - Hausservice DE</title>
+    <link rel="stylesheet" href="contactStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/Logo/Logo neu.png">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>ERZProvide - Hausservice</h1>
+        <a href="/Startseite/index.html">
+            <img src="/Logo/logo neu.png" alt="Logo">   
+        </a>
+
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="/Startseite/index.html">Start</a>
+            <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+            <a href="/Kontakt/contact.html">Kontakt</a>
+            <a href="/Über uns/aboutUs.html">Über uns</a>
+            <a href="/Impressum/imprint.html">Impressum</a>
+        </div>
+    </div>
+
+    <div class="info-bar">
+        <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+        <span class="separator">|</span>
+        <a href="/Kontakt/contact.html">Kontakt</a>
+        <span class="separator">|</span>
+        <a href="/Über uns/aboutUs.html">Über uns</a>
+        <span class="separator">|</span>
+        <a href="/Impressum/imprint.html">Impressum</a>
+    </div>
+
+    <div class="make-contact">
+        <h2><i>Setzen Sie sich gern mit uns in Verbindung</i></h2>
+
+        <form id="contactForm" class="email-form">
+            <input type="hidden" name="access_key" value="628df5ab-ed15-4f31-8f92-425aad3404e5"> 
+            
+            <label>Vor- und Nachname</label>
+            <input type="text" name="name" required placeholder="Name">
+            <label>Ihre Email-Adresse</label>
+            <input type="email" name="email" required placeholder="Email">
+            <label>Nachricht</label>
+            <textarea name="message" required placeholder="Nachricht"></textarea>
+        
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <button type="submit" id="submit-btn">Senden</button>
+            
+            <div class="datenschutz-container">
+                <input type="checkbox" id="datenschutz">
+                <label for="datenschutz">Ich akzeptiere die <a href="/Impressum/imprint.html#datenschutz" target="_blank">Datenschutzrichtlinien</a>.</label>
+            </div>                         
+        </form>
+    </div>
+
+    <h2 id="telephone-number"><i>Telefonnummer: 0173 9330519</i></h2>
+    
+    <script src="contact.js"></script>
+</body>
+</html>

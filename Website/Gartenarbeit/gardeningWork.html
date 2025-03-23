@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERZProvide - Hausservice DE</title>
+    <link rel="stylesheet" href="gardeningWork.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/Logo/Logo neu.png">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>ERZProvide - Hausservice</h1>
+        <a href="/Startseite/index.html">
+            <img src="/Logo/logo neu.png" alt="Logo">
+        </a>
+
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="/Startseite/index.html">Start</a>
+            <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+            <a href="/Kontakt/contact.html">Kontakt</a>
+            <a href="/Über uns/aboutUs.html">Über uns</a>
+            <a href="/Impressum/imprint.html">Impressum</a>
+        </div>
+    </div>
+
+    <div class="info-bar">
+        <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+        <span class="separator">|</span>
+        <a href="/Kontakt/contact.html">Kontakt</a>
+        <span class="separator">|</span>
+        <a href="/Über uns/aboutUs.html">Über uns</a>
+        <span class="separator">|</span>
+        <a href="/Impressum/imprint.html">Impressum</a>
+    </div>
+    
+    <div class="text-clearingOut">
+        <h1>Gartenpflege</h1>
+        <div class="content-container">
+            <div class="service-list">
+                <p><span class="circle"></span>Rasen mähen, vertikutieren, düngen</p>
+                <p><span class="circle"></span>Unkraut entfernen</p>
+                
+                <p><span class="circle"></span>Blumen, Sträucher & Bäume pflanzen</p>
+                <p><span class="circle"></span>Beetpflege & Mulcharbeiten</p>
+                <p><span class="circle"></span>Laub entfernen</p>
+                <p><span class="circle"></span>Gartenabfälle entsorgen</p>
+
+                <p><span class="circle"></span>Hecken- und Strauchschnitt (nur kleine <p id="weiter-rechts">Arbeiten, keine Baumfällungen)</p></p>
+                <button onclick="NachlassUndWohnungFunc()" class="NachlassUndWohnung-button">mehr erfahren</button>
+                <div class="NachlassUndWohnung-description" style="display: none;">
+                    <h3>Mehr zu Hecken- & Strauchschnitt</h3>
+                    <hr>
+                    <p>Hecken- & Strauchschnitt bezeichnet das Zurückscheniden von Gehölzen, um ihre Form zu erhalten, das Wachstum zu fördern oder sie gesund zu halten. Wir führen keine Baumfällarbeiten durch.</p>
+                </div>
+            </div>
+            <div class="text-disposals">
+                <p><span class="circle"></span>Wege & Terassen reinigen</p>
+                <p><span class="circle"></span>Moos & Algen von Gehwegen entfernen</p>
+                <p><span class="circle"></span>Bewässerung & Gießen von Pflanzen</p>
+                <p><span class="circle"></span>Hochbeete anlegen</p>
+                <p><span class="circle"></span>Komposthaufen pflegen</p>
+                <p><span class="circle"></span>Rankhilfen & Zäune setzen</p>
+                <p><span class="circle"></span>Rollrasen verlegen</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="gardeningWork.js"></script>
+</body>
+</html>

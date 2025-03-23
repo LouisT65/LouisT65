@@ -1,0 +1,687 @@
+html{
+    scrollbar-width: none;
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Verhindert das horizontale Scrollen */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 100% !important;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 
+    'FILL' 0, 
+    'wght' 400, 
+    'GRAD' 0, 
+    'opsz' 48;
+    color: white !important;
+    position: absolute; /* Position innerhalb der Box */
+    pointer-events: none; /* Verhindert, dass die Icons die Interaktivität der Box beeinträchtigen */
+}
+
+.box span{
+    font-size: 90px;
+}
+
+#icon1 {
+    top: 460px;
+    left: 1.5%;
+}
+
+#icon2 {
+    top: 460px;
+    left: 35.5%;
+}
+
+#icon3 {
+    top: 460px;
+    left: 75.5%;
+}
+
+#icon4{
+    top: 197px;
+    left: 4.5%;
+}
+
+#icon5{
+    top: 765px;
+    left: 42.2%;
+}
+
+a:hover {
+    color: inherit !important; 
+    text-decoration: none !important;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-bar{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;	
+    align-items: center;
+    position: relative;
+}
+
+.top-bar h1{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.top-bar img {
+    transition: none !important;
+    transform: none !important;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    width: 150px;
+    height: auto;
+    margin-top: 3px;
+}
+
+.top-bar a:hover{
+    transform: none !important;	
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    border: 1px solid white;
+    z-index: 999;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid gray;
+}
+
+.info-bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    margin-top: -2px;
+    background-color: white;
+    gap: 120px;
+}
+
+.info-bar a {
+    margin-top: 13px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.separator{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    margin-top: 7px;
+    font-size: 35px;
+    font-weight: 1;
+    color: black;
+}
+
+.container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    width: 100%;
+    height: 742px; 
+    margin-top: -100px; /* Negative Margin, um über die Info-Bar zu gehen */
+}
+
+.box {
+    border: none;
+    display: flex;
+    flex-direction: column; /* Sicherstellen, dass der Button unter der Überschrift steht */
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.box h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 60px;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: -30px !important; /* Entfernt den Abstand oben */
+}
+
+.box button {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    margin-top: 60px !important; /* Abstand nach oben, damit der Button unter der Überschrift ist */
+    align-self: center; /* Zentriert den Button */
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#box1{
+    margin-bottom: -70px;
+    width: 100%;
+    background-color: rgb(178, 178, 178);
+}
+
+#text-1 {
+    width: 550px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 0px;
+    transition: width 0.5s ease, height 0.5s ease; /* Übergang für die Größe */
+}
+
+#text-1 {
+    display: none;
+}
+
+
+#text-1 p{
+    margin-left: 8px;
+    font-size: 16px;
+}
+
+#text-p{
+    margin-top: 10px;
+}
+
+.anstriche {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Zwei Spalten */
+    gap: 15px; /* Abstand zwischen den Elementen */
+    align-items: center;
+    margin-left: 10px;
+}
+
+.anstriche {
+    display: grid;
+    grid-template-columns: repeat(2, max-content); /* Maximale Breite für den Text */
+    gap: 10px; /* Abstand zwischen den Spalten */
+}
+
+.anstriche p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Abstand zwischen Kreis und Text */
+    font-size: 14px !important;
+}
+
+.anstriche p::before {
+    content: "";
+    display: inline-block;
+    width: 8px; /* Größe des Kreises */
+    height: 8px;
+    border: 1px solid black; /* Ungefüllter Kreis */
+    border-radius: 50%;
+}
+
+h3{
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    margin-left: 46px;
+}
+
+#text-2 {
+    width: 88% !important;
+    height: 230px !important;
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: -44px !important;
+    transition: width 0.5s ease, height 0.5s ease; /* Übergang für die Größe */
+}
+
+#text-2 {
+    display: none;
+}
+
+#text-2 h3{
+    text-align: center;
+}
+
+#text-2 p{
+    margin-left: 25px;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+#anstriche-2{
+    margin-left: 60px;
+}
+
+#box2{
+    margin-bottom: -70px;
+    width: 122%;
+    margin-left: 0px;
+    background-color: rgb(188, 188, 188);
+}
+
+#box3{
+    margin-bottom: -70px;
+    width: 81%;
+    margin-left: 110px;
+    background-color: rgb(161, 161, 161);
+}	
+
+#text-3 {
+    width: 430px;
+    height: 140px;
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 0px;
+    transition: width 0.5s ease, height 0.5s ease; /* Übergang für die Größe */
+}
+
+#text-3 {
+    display: none;
+}
+
+#box3 h1{
+    text-align: center;
+}
+
+#text-3 h3{
+    margin-left: 13px;
+}
+
+#text-3 p{
+    margin-left: 25px;
+    margin-right: 8px;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+#box3 button{
+    width: 30%;
+}
+
+#box4{
+    position: relative;
+    margin-top: 70px;
+    width: 120%;
+    background-color: rgb(201, 201, 201);
+}
+
+#text-4 {
+    width: 98%;
+    height: 120px;
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 0px;
+    transition: width 0.5s ease, height 0.5s ease; /* Übergang für die Größe */
+}
+
+#box4:has(#text-4:not([style*="display: none"])) h1 {
+    margin-top: 10px; /* Überschrift rutscht nach oben */
+}
+
+#box4:has(#text-4:not([style*="display: none"])) button {
+    margin-top: 20px; /* Button rutscht nach oben */
+}
+
+#text-4 {
+    display: none;
+}
+
+#text-4 h3{
+    text-align: center;
+}
+
+#text-4 p{
+    margin-left: 25px;
+    margin-right: 8px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+#box5{
+    margin-top: 70px;
+    width: 200%;
+    background-color: rgb(100, 100, 100);
+    margin-right: 0px;
+    border: none !important;
+}
+
+#box5 h1{
+
+    margin-left: 110px;
+}	
+
+#box5 button{
+    margin-left: 110px;
+    width: 13%;
+}
+
+#box5:has(#text-5:not([style*="display: none"])) h1 {
+    margin-top: 10px; /* Überschrift rutscht nach oben */
+}
+
+#box5:has(#text-5:not([style*="display: none"])) button {
+    margin-top: 20px; /* Button rutscht nach oben */
+}
+
+
+#text-5 {
+    width: 80%;
+    height: 135px;
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid black;
+    font-size: 18px;
+    margin-left: 110px;
+    transition: width 0.5s ease, height 0.5s ease; 
+}
+
+#text-5 {
+    display: none;
+}
+
+#text-5 h3{
+    text-align: center;
+    margin-left: -5px;
+}
+
+#text-5 p{
+    margin-left: 25px;
+    margin-right: 8px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        height: 160%;
+        overflow-x: hidden; /* Kein horizontales Scrollen */
+        overflow-y: auto;   /* Vertikales Scrollen erlauben */
+}
+    
+    .top-bar{
+        height: 120px;
+    }
+
+    .no-quotes{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block; 
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .top-bar img{
+        margin-bottom: 20px;
+        width: 90px;
+        margin-left: -100px;
+        margin-top: 8px;
+    }
+
+    .top-bar h1{
+        text-align: left;
+        margin-left: 100px;
+        margin-bottom: 20px;
+        white-space: normal;
+    }
+
+    .info-bar{
+        display: none; 
+    }
+
+    .info{
+        display: none !important;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Nur eine Spalte */
+        grid-template-rows: auto;
+        height: auto;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        width: 27.3rem !important;
+        height: 500px;
+    }
+
+    .box h1 {
+        font-size: 40px;
+        margin-top: -100px;
+    }
+
+    .box button {
+        font-size: 18px;
+        width: 50%;
+        height: 50px;
+        color: black;
+    }
+
+    #text-1 h3{
+        text-align: center; 
+    }
+
+    #text-1{
+        width: 90%;
+        height: 260px;
+    }
+
+    #text-1 h3{
+        font-size: 21px;
+    }
+
+    #text-1 p{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    #text-1 h3{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #icon1{
+        position: relative;
+        left: -37vw;
+        top: 29.5vh;
+    }
+
+    #icon2{
+        position: relative;
+        left: -37vw;
+        top: 27vh;
+    }
+
+    #icon3{
+        position: relative;
+        left: -37vw;
+        top: 20vh;
+    }
+
+    #icon4{
+        position: relative;
+        left: -37vw;
+        top: 28vh;
+    }
+
+    #icon5{
+        position: relative;
+        left: -37vw;
+        top: 24vh;
+    }
+
+    #text-2 h3{
+        text-align: center; 
+    }
+
+    #text-2{
+        width: 95% !important;
+        height: 280px !important;
+        margin-left: 0vw !important;
+    }
+
+    #text-2 h3{
+        font-size: 21px;
+    }
+
+    #text-2 p{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    #text-2 h3{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #anstriche-2 p{
+        margin-left: -47px !important;
+    }
+
+    .anstriche {
+        grid-template-columns: 1fr; /* Ändere das Layout auf eine Spalte */
+        gap: 5px; /* Verringere den Abstand zwischen den Anstrichen */
+        margin-left: 0; /* Setze den linken Abstand auf 0 */
+    }
+
+    .anstriche p {
+        font-size: 12px; /* Passe die Schriftgröße an */
+        margin-left: 0; /* Entferne den linken Abstand */
+        justify-content: center; /* Zentriere den Inhalt */
+    }
+
+    #box3{
+        margin-left: 0px;
+        height: 350px;
+    }
+
+    #title3{
+        margin-top: -3vh !important;
+    }
+
+    #text-3{
+        width: 95%;
+        height: 120px;
+        margin-left: 2px;
+    }
+
+    #text-3 h3{
+        font-size: 21px;
+        text-align: center;
+    }
+
+    #text-3 p{
+        font-size: 14px;
+        margin-left: 15px;
+        margin-top: 8px;
+    }
+
+    #box4{
+        height: 350px;
+    }
+
+    #text-4{
+        width: 95%;
+        height: 130px;  
+    }
+
+    #text-4 h3{
+        font-size: 21px;
+        margin-left: 0px;
+    }
+
+    #text-4 p{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+
+    #box5{
+        margin-top: 0;
+        height: 400px !important;
+    }
+
+    #box5 h1{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -3vh !important;
+    }
+
+    #box5 button{
+        margin-left: 0px;
+        width: 30%;
+    }
+
+    #text-5{
+        width: 95%;
+        height: 180px;
+        margin-left: 0vw !important;
+    }
+
+    #text-5 h3{
+        font-size: 18px;
+        margin-left: 20px !important;
+    }
+
+    #text-5 p{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+}

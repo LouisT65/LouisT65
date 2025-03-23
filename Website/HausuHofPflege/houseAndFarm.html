@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERZProvide - Hausservice DE</title>
+    <link rel="stylesheet" href="houseAndFarm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/Logo/Logo neu.png">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>ERZProvide - Hausservice</h1>
+        <a href="/Startseite/index.html">
+            <img src="/Logo/logo neu.png" alt="Logo">
+        </a>
+
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>  
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="/Startseite/index.html">Start</a>
+            <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+            <a href="/Kontakt/contact.html">Kontakt</a>
+            <a href="/Über uns/aboutUs.html">Über uns</a>
+            <a href="/Impressum/imprint.html">Impressum</a>
+        </div>
+    </div>
+
+    <div class="info-bar">
+        <a href="/Tarife & Pakete/t-a-p.html">Tarife & Pakete</a>
+        <span class="separator">|</span>
+        <a href="/Kontakt/contact.html">Kontakt</a>
+        <span class="separator">|</span>
+        <a href="/Über uns/aboutUs.html">Über uns</a>
+        <span class="separator">|</span>
+        <a href="/Impressum/imprint.html">Impressum</a>
+    </div>
+    
+    <div class="text-clearingOut">
+        <div style="width: 100%;">
+            <h1>Haus- & Hofpflege</h1><br>
+        </div>
+        <div style="display: flex; gap: 10%;">
+        <div style="width: 50%;">
+            <p><span class="circle"></span>Gehwege & Einfahrten kehren </p>
+            <p class="test"><span class="circle"></span>Dachrinnen reinigen</p>
+            <button onclick="dachrinnenReinigenFunc()" class="dachrinnen-reinigen-button">mehr erfahren</button>
+            <div class="dachrinnen-reinigen-description" style="display: none;">
+                <h3>Mehr zu Dachrinnen reinigen</h3>
+                <hr>
+                <p>Wir reinigen Dachrinnen in Höhen bis maximal 5 Metern mit stabilen Leitern und entsprechender Sicherheitsausrüstung. Dabei entfernen wir Laub, Schmutz und Ablagerungen gründlich, prüfen den Zustand der Rinne und entsorgen die Rückstände fachgerecht.</p>
+            </div>
+            <p class="test"><span class="circle"></span>Mülltonnen-Service (Raus- & Reinstellen)</p>
+            <p class="test"><span class="circle"></span>Schnee räumen & Streudienst</p>
+        </div>	
+        </div>
+
+        <div class="text-left">
+            <p class="test"><span class="circle"></span>Eiszapfen entfernen</p>
+            <p class="test"><span class="circle"></span>Zäune reparieren</p>
+            
+            <div class="desktop">
+                <p class="test"><span class="circle"></span>Hof- & Terassenreinigung mit Hochdruckreiniger</p>
+            </div>
+
+            <div class="media">
+                <p class="test"><span class="circle"></span>Hof- & Terassenreinigung <p id="weiter-rechts">mit Hochdruckreiniger</p></p></p>
+            </div>
+        </div>
+    
+
+    </div>
+    <script src="houseAndFarm.js"></script>
+</body>
+</html>
